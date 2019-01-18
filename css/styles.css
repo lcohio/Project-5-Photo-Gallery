@@ -19,14 +19,13 @@
     -webkit-appearance: none;
     width: 330px;
     height: 55px;
-    margin-top: 30px;
+    margin-top: 60px;
     margin-left: 10px;
     border: 1.5px solid #CACBCB;
     border-radius: 5px;
     font-size: 1.1em;
     text-indent: 7px;
     transition: border .5s;
-
 }
 
 #site-search:focus {
@@ -49,7 +48,7 @@ a {
     flex: 0 0 24.3333%;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
     
     #site-search {
         width: 500px;
@@ -57,3 +56,16 @@ a {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    
+    .lb-image, .lb-dataContainer {
+        max-width: 100%;
+        height: auto !important;
+        width: 100%;
+    }
+       
+    .lb-outerContainer {
+        max-width: 100%;
+        height: auto !important;
+    }
+}
